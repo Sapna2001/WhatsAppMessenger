@@ -1,0 +1,65 @@
+body {
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #phone {
+    margin-left: 25px;
+ }
+
+ p, label {
+     font-size: 1.4rem;
+ }
+
+ input {
+     height: 24px;
+     width: auto;
+     padding: 2px 0 2px 8px;
+ }
+
+ input:placeholder {
+    font-size: 1rem;
+ }
+
+ #sendMessageButton {
+     background-color: white;
+     color: black;
+     border: 2px solid white;
+     font-size: 1.4rem;
+     border-radius: 16px;
+     padding: 5px 10px;
+     margin-top: 32px;
+     cursor: pointer;
+ }
+
+ @media only screen and (max-width: 540px) {
+    .container {
+        width: 80vw;
+        margin: 0 10vw;
+    }
+ }
+
+ @media only screen and (max-width: 360px) {
+    .container {
+        width: 70vw;
+        margin: 0 15vw;
+    }
+    .inputContainer {
+        flex-direction: column;
+    }
+ }
