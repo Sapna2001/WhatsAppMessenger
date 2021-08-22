@@ -73,6 +73,12 @@ body {
         width: 80vw;
         margin: 0 10vw;
     }
+    .container {
+        height: 70vh;
+    }
+    .footer {
+        height: 30vh;
+    }
  }
 
  @media only screen and (max-width: 360px) {
