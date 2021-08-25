@@ -10,8 +10,8 @@ function phoneNumberValid(phoneNumber) {
 }
 
 function sendMessage() {
-    let phoneNumber = phone.value.split(" ").join("");
-    // console.log(phoneNumber)   
+    let phoneNumber = phone.value.replace("+91", "").split(" ").join("")
+    console.log(phoneNumber)   
     if(phoneNumberValid(phoneNumber)) {
         let url = `https://api.whatsapp.com/send?phone=91${phoneNumber}&text=`
         location.href = url;    
