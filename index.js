@@ -10,7 +10,7 @@ function phoneNumberValid(phoneNumber) {
 }
 
 function sendMessage() {
-    let phoneNumber = phone.value;
+    let phoneNumber = phone.value.trim();
     // console.log(phoneNumber)   
     if(phoneNumberValid(phoneNumber)) {
         let url = `https://api.whatsapp.com/send?phone=91${phoneNumber}&text=`
